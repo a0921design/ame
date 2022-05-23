@@ -569,16 +569,16 @@ footer #copyright {
     height: 13.333vw;
     display: flex;
     align-items: baseline;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 90;
   }
   header h1 {
     color: #333;
-    top: 0;
+    position: static;
     font-size: 8vw;
-    margin-top: 2.667vw;
+    margin-top: 0;
     margin-left: 5%;
   }
   header .copy {
@@ -615,6 +615,10 @@ footer #copyright {
     z-index: 999;
     background: #fff;
   }
+  header nav.show {
+    opacity: 1;
+    visibility: visible;
+  }
   header nav ul {
     flex-direction: column;
     -moz-writing-mode: horizontal-tb;
@@ -639,6 +643,9 @@ footer #copyright {
     margin-right: 5%;
     cursor: pointer;
   }
+  header #navBtn.bgAlpha {
+    background: transparent;
+  }
   header #navBtn #btnLine1 {
     height: 0.333vw;
     width: 6vw;
@@ -646,6 +653,10 @@ footer #copyright {
     position: absolute;
     top: 2.6vw;
     transition: .5s;
+  }
+  header #navBtn #btnLine1.rotate1 {
+    transform: translateY(1.3vw) rotate(-315deg);
+    background: #333;
   }
   header #navBtn #btnLine2 {
     height: 0.333vw;
@@ -655,22 +666,11 @@ footer #copyright {
     bottom: 2.6vw;
     transition: .5s;
   }
-  /*ボタンタップ時の挙動*/
-  .show {
-    opacity: 1;
-    visibility: visible;
-  }
-  .bgAlpha {
-    background-color: transparent;
-  }
-  .rotate1 {
-    transform: translateY(1.3vw) rotate(-315deg);
-    top: 0;
-  }
-  .rotate2 {
+  header #navBtn #btnLine2.rotate2 {
     transform: translateY(-1.1vw) rotate(315deg);
-    bottom: 0;
+    background: #333;
   }
+  /*ボタンタップ時の挙動*/
   main {
     width: 90%;
     margin: 0 auto;
