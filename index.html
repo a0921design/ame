@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="robots" content="noindex,nofollow">
     <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>âme 音楽も楽しめるヘアサロン</title>
     <script>
@@ -25,6 +26,11 @@
     </div>
     <!--ヘッドライン-->
     <div id="headline">
+      <div class="bg">
+        <div class="bg01"></div>
+        <div class="bg02"></div>
+        <div class="bg03"></div>
+      </div>
     <!--ヘッダー-->
       <header>
         <h1>âme</h1>
@@ -270,6 +276,21 @@
       </div>
       <div id="copyright">© 2022 âme All rights received</div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(".bg").slick({
+          arrows: false,
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          speed: 3000,
+          fade: true,
+          pauseOnFocus: false,
+          pauseOnHover: true,
+          pauseOnDotsHover: false,
+      });
+    </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=smoothscroll"></script>
     <script src="js/load.js"></script>
     <script src="js/menu.js"></script>
